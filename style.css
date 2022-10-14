@@ -398,6 +398,15 @@ text-align: center;
    padding-top:1px;
   }
   
+  .team{
+  margin-left:auto;
+  margin-right:auto;
+  height: 100px;
+  width: 100px;
+  background: #0f4061;
+  border-radius:50%;
+  border: 10px solid #ffea00;
+  }
   
   
   
@@ -425,4 +434,9 @@ text-align: center;
   margin-left:auto;
   margin-right:auto;
   background: linear-gradient(90deg, #282828 0%, #0f4061 100%);
+  }
+  
+  .fa-users{
+  color: #fff;
+  
   }
