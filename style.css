@@ -152,7 +152,7 @@ opacity: 0.5;
 
 .caption{
 text-align: center;
-  background-color: #FFF333;
+  background-color: #ffea00;
   padding: 8px 12px;
   width: 80%;
   color: #222;
@@ -167,7 +167,7 @@ text-align: center;
   padding-bottom: 5px;
   border-bottom-style: solid;
   border-bottom-width: 3.1px;
-  border-block-color:#FFF333;
+  border-block-color:#ffea00;
   width: fit-content;
   margin-left:auto;
   margin-right:auto;
@@ -289,7 +289,7 @@ text-align: center;
  
   
   .container2:hover{
-  border: 5px solid #fff000;
+  border: 5px solid #ffea00;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   
