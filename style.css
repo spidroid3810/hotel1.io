@@ -392,12 +392,12 @@ text-align: center;
   .icon{
   margin-left:auto;
   margin-right:auto;
-   height: 80px;
-   width: 80px;
+   height: 100px;
+   width: 100px;
    background: #0f4061;
    border-radius:50%;
    border: 10px solid #ffea00;
-   padding-top:1px;
+   padding: 5px;
    color: #fff;
   }
   
