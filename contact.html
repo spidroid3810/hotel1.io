@@ -27,27 +27,39 @@
       </nav>
       
       <br>
-            <div class="content">
-      <div class="container">
-  <img class="team" src="contactus.png">	
-  				  	<h4>Contact Us</h4>
-  	
-  					    <form method="post"  action="contact-form-handler.php"  netlify >
-  					    	
-  						    	<p><label>Enter Email Id</label>
-  						    	<input id="email" name="email" type="email" required></p>
-  						    	
-                              <p><label>Enter Feedback</label></p>
-                              <textarea name="message" rows="10" cols="20">Please enter your valuable feeback.</textarea>
-           
-  						   
-  						   
-  						   <div>
-  						   		<span><input style="height:50px;width:90px;padding:10px;background: #ffea00;border: none;border-radius:20px;" type="submit" value="Submit" onclick="myFunction()"></span>
-  						  </div>
-                              </fieldset>
-  					    </form>
-  </div>
+     <div class="content">
+     <div class="contain">
+     <div class="wrapper animated bounceInLeft">
+     <div class="contact">
+     <img class="team" src="contactus.png">
+     <h4 class="contact-us">Contact Us</h4>
+     <div class="alert">Your message has been sent!</div>
+     <form id="contactForm">
+     <p class="name-field">
+     <label>Name <span>*</span></label>
+     <input type="text" name="name" id="name" required>
+     </p>
+     <p class="email-field">
+     <label>Email <span>*</span></label>
+     <input type="email" name="email" id="email" required>
+     </p>
+     <p class="phone-field">
+     <label>Phone</label>
+     <input type="text" name="phone" id="phone">
+     </p>
+     <p class="message-field full">
+     <label>Feedback</label>
+     <textarea name="message" rows="5" id="message"></textarea>
+     </p>
+     <p class="required-field">Required&nbsp;field <span>*</span></p>
+     <p class="submit-button">
+     <button type="submit">Submit</button>
+     </p>
+     </form>
+     </div>
+     </div>
+     </div>
+   
   <br>
   <br>
   <div class="box center-box">

@@ -458,3 +458,221 @@ text-align: center;
   color: #ffea00;
   font-weight:bold;
   }
+  
+ 
+ *{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Poppins', sans-serif;
+ } 
+ 
+ .contain {
+ max-width: 700px;
+ margin-left: auto;
+ margin-right: auto;
+ padding: 1em;
+ }
+ 
+ ul {
+ list-style: none;
+ padding: 0;
+ }
+ 
+ .title {
+ margin-bottom: 30px;
+ font-family: 'Poppins', sans-serif;
+ font-weight: bold;
+ font-size: 25px;
+ color: #111;
+ text-align: center;
+ padding-bottom: 5px;
+ border-bottom-style: solid;
+ border-bottom-width: 3.1px;
+ border-block-color:#ffea00;
+ width: fit-content;
+ margin-left:auto;
+ margin-right:auto;
+ }
+ 
+ .wrapper {
+ background: #fff;
+ opacity:0.9;
+ border-radius: 20px;
+ box-shadow: 0 0 20px 0 rgba(0,0,0, .1);
+ padding: 27.5px;
+ border-left: 5px solid #ffea00;
+ border-right: 5px solid #ffea00;
+ }
+ 
+ #contactForm {
+ display: grid;
+ grid-gap: 20px;
+ grid-template-areas:
+ 'name'
+ 'email'
+ 'phone'
+ 'message';
+ }
+ 
+ .required-field {
+ grid-column: 1 / 2;
+ }
+ 
+ .submit-button {
+ grid-column: 2 / 3;
+ }
+ 
+ .name-field {
+ grid-area: name;
+ grid-column: 1 / 3;
+ }
+ 
+ .email-field {
+ grid-area: email;
+ grid-column: 1 / 3;
+ }
+ 
+ .phone-field {
+ grid-area: phone;
+ grid-column: 1 / 3;
+ }
+ 
+ .message-field {
+ grid-area: message;
+ grid-column: 1 / 3;
+ }
+ 
+ /* FORM STYLES */
+ 
+ .contact-us {
+ margin: 0 0 30px;
+ font-family: 'Poppins', sans-serif;
+ font-weight: 400;
+ color: #111;
+ }
+ 
+ .contact form {
+ border: 0;
+ }
+ 
+ .contact form label {
+ display: block;
+ color: #111;
+ }
+ 
+ .contact form p {
+ margin: 0;
+ font-family: 'Poppins', sans-serif;
+ font-weight: 200;
+ font-size: 12px;
+ color: #111;
+ }
+ 
+ .contact form input, .contact form textarea {
+ font-family: 'Poppins', sans-serif;
+ font-weight: 200;
+ font-size: 14px;
+ width: 100%;
+ padding: .4em .8em;
+ background: rgba(249, 250, 250, .5);
+ border: 1px solid rgba(74, 86, 96, .1);
+ border-radius: 2.5px;
+ outline-color: #5dc3f2;
+ }
+ 
+ .contact form button {
+ font-family: 'Poppins', sans-serif;
+ font-weight: 400;
+ font-size: 12px;
+ color: #111;
+ background: #ffea00;
+ width: 90px;
+ height: 30px;
+ border: 0;
+ border-radius: 15px;
+ }
+ 
+ .submit-button {
+ align-self: center;
+ justify-self: end;
+ }
+ 
+ .contact form button:hover, .contact form button:focus {
+ background: #ffea00;
+ color: #111;
+ outline: 0;
+ transition: background-color 0.3s ease-out;
+ }
+ 
+ .required-field {
+ font-family: 'Poppins', sans-serif;
+ font-weight: 200;
+ font-size: 10px;
+ align-self: center;
+ justify-self: start;
+ }
+ 
+ span {
+ color: red;
+ }
+ 
+ .alert {
+ margin-bottom: 1em;
+ padding: 10px;
+ background: #ffea00;
+ font-family: 'Poppins', sans-serif;
+ font-size: 14px;
+ text-align: center;
+ color: #fff;
+ border-radius: 2.5px;
+ display: none;
+ }
+ 
+ /* LARGE SCREENS */
+ 
+ @media (min-width: 500px) {
+ #contactForm {
+ grid-template-columns: 1fr 1fr;
+ grid-template-areas:
+ 'name company'
+ 'email phone'
+ 'message message';
+ }
+ 
+ .name-field {
+ grid-area: name;
+ grid-column: 1 / 2;
+ }
+ 
+ .email-field {
+ grid-area: email;
+ grid-column: 1 / 2;
+ }
+ 
+ .phone-field {
+ grid-area: phone;
+ grid-column: 2 / 3;
+ }
+ 
+ .message-field {
+ grid-area: message;
+ grid-column: 1 / 3;
+ }
+ }
+ 
+ input{
+ color: #fff;
+ }
+ textarea{
+ color: #fff;
+ 
+ }
+ 
+ 
+ label{
+ text-align: left;
+ }
+ 
+ 
+ 
