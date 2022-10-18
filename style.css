@@ -566,7 +566,7 @@ text-align: center;
  
  .phone-field {
  grid-area: phone;
- grid-column: 2 / 3;
+ grid-column: 1 / 2;
  }
  
  .arrival-field {
