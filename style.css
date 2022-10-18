@@ -593,6 +593,25 @@ text-align: center;
  grid-area: message;
  grid-column: 1 / 3;
  }
+ 
+ #contactForm {
+ grid-template-columns: 1fr 1fr;
+ grid-template-areas:
+ 'name email'
+ 'message message';
+ }
+ 
+ .name-field {
+ grid-area: name;
+ grid-column: 1 / 2;
+ }
+
+ .email-field {
+ grid-area: email;
+ grid-column: 2 / 2;
+ }
+ 
+ 
  }
  
  input{
