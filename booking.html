@@ -34,7 +34,7 @@
      <div class="contact">
      <img class="team" src="images/book.png">
      <h4 class="contact-us">Hotel Booking Form</h4>
-     <div class="alert">Your message has been sent!</div>
+     <div class="alert">Your Booking has been made</div>
      <form id="bookForm">
      <p class="name-field">
      <label>First Name<span>*</span></label>
@@ -42,7 +42,7 @@
      </p>
      <p class="last-field">
      <label>last Name<span>*</span></label>
-     <input type="text" name="name" id="name" required>
+     <input type="text" name="last" id="last" required>
      </p>
      <p class="email-field">
      <label>Email <span>*</span></label>
@@ -54,19 +54,19 @@
      </p>
      <p class="arrival-field">
      <label>Arrival date<span>*</span></label>
-     <input type="date" name="date" id="name" required>
+     <input type="date" name="arrival" id="arrival" required>
      </p>
      <p class="departure-field">
      <label>Departure date<span>*</span></label>
-     <input type="date" name="date" id="name" required>
+     <input type="date" name="departure" id="departure" required>
      </p>
      <p class="adults-field">
      <label>Number of adults<span>*</span></label>
-     <input type="number" name="number" id="name" required>
+     <input type="number" name="adults" id="adults" required>
      </p>
      <p class="child-field">
      <label>Number of children<span>*</span></label>
-     <input type="number" name="number" id="name" required>
+     <input type="number" name="child" id="child" required>
      </p>
      <p class="message-field full">
      <label>Special Requests</label>
@@ -108,11 +108,88 @@
   
   
   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-  
-  
+  <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"> </script>
   </body>
   </html>
   
   
+  <script type="text/javascript">
   
+  // Initialize Firebase
+  var config = {
+  apiKey: "AIzaSyBUgTCba3aGzaphwi7cYWq86qQOK9z9uek",
+  authDomain: "webdata-1447d.firebaseapp.com",
+  databaseURL: "https://webdata-1447d-default-rtdb.firebaseio.com",
+  projectId: "webdata-1447d",
+  storageBucket: "webdata-1447d.appspot.com",
+  messagingSenderId: "503166588222",
+  appId: "1:503166588222:web:c94a8c4cc70b062dcd486f",
+  measurementId: "G-P2XYM2FVPD"
+  
+  };
+  firebase.initializeApp(config);
+  
+  // Reference messages collection
+  var messagesRef = firebase.database().ref('Collected Data');
+  
+  // Listen for form submit
+  document.getElementById('bookForm').addEventListener('submit', submitForm);
+  
+  // Submit form
+  function submitForm(e){
+  e.preventDefault();
+  
+  //Get value
+  var name = getInputVal('name');
+  var last = getInputVal('last');
+  var email = getInputVal('email');
+  var phone = getInputVal('phone');
+  var arrival = getInputVal('arrival');
+  var departure = getInputVal('departure');
+  var adults = getInputVal('adults');
+  var child = getInputVal('child');
+  var message = getInputVal('message');
+  
+  // Save message
+  saveMessage(name, last, email, phone,arrival,departure,adults,child, message);
+  
+  // Show alert
+  document.querySelector('.alert').style.display = 'block';
+  
+  // Hide alert after 3 seconds
+  setTimeout(function(){
+  document.querySelector('.alert').style.display = 'none';
+  },3000);
+  
+  // Clear form
+  document.getElementById('bookForm').reset();
+  }
+  
+  // Function to get form value
+  function getInputVal(id){
+  return document.getElementById(id).value;
+  }
+  
+  // Save message to firebase
+  function saveMessage(name, last, email, phone, arrival, departure, adults, child, message){
+  var newMessageRef = messagesRef.push();
+  newMessageRef.set({
+  name: name,
+  last: last,
+  email: email,
+  phone: phone,
+  arrival: arrival,
+  departure: departure,
+  adults: adults,
+  child: child,
+  message: message
+  });
+  }
+  
+  
+  
+  
+  
+  
+  </script>
   
