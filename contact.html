@@ -84,6 +84,7 @@
   
   
   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"> </script>
   
   
   </body>
@@ -91,4 +92,71 @@
   
   
   
+  <script type="text/javascript">
+  
+  // Initialize Firebase
+  var config = {
+  apiKey: "AIzaSyBUgTCba3aGzaphwi7cYWq86qQOK9z9uek",
+  authDomain: "webdata-1447d.firebaseapp.com",
+  databaseURL: "https://webdata-1447d-default-rtdb.firebaseio.com",
+  projectId: "webdata-1447d",
+  storageBucket: "webdata-1447d.appspot.com",
+  messagingSenderId: "503166588222",
+  appId: "1:503166588222:web:c94a8c4cc70b062dcd486f",
+  measurementId: "G-P2XYM2FVPD"
+  
+  };
+  firebase.initializeApp(config);
+  
+  // Reference messages collection
+  var messagesRef = firebase.database().ref('Collected Data');
+  
+  // Listen for form submit
+  document.getElementById('contactForm').addEventListener('submit', submitForm);
+  
+  // Submit form
+  function submitForm(e){
+  e.preventDefault();
+  
+  //Get value
+  var name = getInputVal('name');
+  var email = getInputVal('email');
+  var message = getInputVal('message');
+  
+  // Save message
+  saveMessage(name, email, message);
+  
+  // Show alert
+  document.querySelector('.alert').style.display = 'block';
+  
+  // Hide alert after 3 seconds
+  setTimeout(function(){
+  document.querySelector('.alert').style.display = 'none';
+  },3000);
+  
+  // Clear form
+  document.getElementById('contactForm').reset();
+  }
+  
+  // Function to get form value
+  function getInputVal(id){
+  return document.getElementById(id).value;
+  }
+  
+  // Save message to firebase
+  function saveMessage(name, email, message){
+  var newMessageRef = messagesRef.push();
+  newMessageRef.set({
+  name: name,
+  email: email,
+  message: message
+  });
+  }
+  
+  
+  
+  
+  
+  
+  </script>
   
