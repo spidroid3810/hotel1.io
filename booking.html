@@ -23,8 +23,8 @@
             <li><a href="service.html">Services</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="booking.html">Booking</a></li>
-            <li><a href="contact.html">Contact us</a></li>
-            </ul>
+            <li><a href=".html">Contact us</a></li>
+         </ul>
       </nav>
       
       <br>
@@ -32,20 +32,44 @@
      <div class="contain">
      <div class="wrapper animated bounceInLeft">
      <div class="contact">
-     <img class="team" src="images/contactus.png">
-     <h4 class="contact-us">Contact Us</h4>
+     <img class="team" src="images/book.png">
+     <h4 class="contact-us">Hotel Booking Form</h4>
      <div class="alert">Your message has been sent!</div>
-     <form id="contactForm">
+     <form id="bookForm">
      <p class="name-field">
-     <label>Name <span>*</span></label>
+     <label>First Name<span>*</span></label>
+     <input type="text" name="name" id="name" required>
+     </p>
+     <p class="last-field">
+     <label>last Name<span>*</span></label>
      <input type="text" name="name" id="name" required>
      </p>
      <p class="email-field">
      <label>Email <span>*</span></label>
      <input type="email" name="email" id="email" required>
      </p>
+     <p class="phone-field">
+     <label>Phone<span>*</span></label>
+     <input type="text" name="phone" id="phone">
+     </p>
+     <p class="arrival-field">
+     <label>Arrival date<span>*</span></label>
+     <input type="date" name="date" id="name" required>
+     </p>
+     <p class="departure-field">
+     <label>Departure date<span>*</span></label>
+     <input type="date" name="date" id="name" required>
+     </p>
+     <p class="adults-field">
+     <label>Number of adults<span>*</span></label>
+     <input type="number" name="number" id="name" required>
+     </p>
+     <p class="child-field">
+     <label>Number of children<span>*</span></label>
+     <input type="number" name="number" id="name" required>
+     </p>
      <p class="message-field full">
-     <label>Feedback</label>
+     <label>Special Requests</label>
      <textarea name="message" rows="5" id="message"></textarea>
      </p>
      <p class="required-field">Required&nbsp;field <span>*</span></p>
