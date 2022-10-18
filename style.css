@@ -455,7 +455,7 @@ text-align: center;
  .contact-us {
  margin: 0 0 30px;
  font-family: 'Poppins', sans-serif;
- font-weight: 400;
+ font-weight: 700;
  color: #111;
  }
  
@@ -471,7 +471,7 @@ text-align: center;
  .contact form p {
  margin: 0;
  font-family: 'Poppins', sans-serif;
- font-weight: 200;
+ font-weight: 700;
  font-size: 12px;
  color: #111;
  }
@@ -490,7 +490,7 @@ text-align: center;
  
  .contact form button {
  font-family: 'Poppins', sans-serif;
- font-weight: 400;
+ font-weight: 700;
  font-size: 12px;
  color: #111;
  background: #ffea00;
@@ -622,6 +622,7 @@ text-align: center;
  border: none;
  padding: 0.5em;
  border-radius: 15px;
+ font-weight: 700;
  }
  
  button:hover{
