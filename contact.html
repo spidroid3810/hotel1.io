@@ -40,9 +40,9 @@
      <label>Name <span>*</span></label>
      <input type="text" name="name" id="name" required>
      </p>
-     <p class="email-field">
+     <p class="emails-field">
      <label>Email <span>*</span></label>
-     <input type="email" name="email" id="email" required>
+     <input type="emails" name="emails" id="emails" required>
      </p>
      <p class="message-field full">
      <label>Feedback</label>
@@ -120,11 +120,11 @@
   
   //Get value
   var name = getInputVal('name');
-  var email = getInputVal('email');
+  var emails = getInputVal('emails');
   var message = getInputVal('message');
   
   // Save message
-  saveMessage(name, email, message);
+  saveMessage(name, emails, message);
   
   // Show alert
   document.querySelector('.alert').style.display = 'block';
@@ -144,11 +144,11 @@
   }
   
   // Save message to firebase
-  function saveMessage(name, email, message){
+  function saveMessage(name, emails, message){
   var newMessageRef = messagesRef.push();
   newMessageRef.set({
   name: name,
-  email: email,
+  emails: emails,
   message: message
   });
   }
