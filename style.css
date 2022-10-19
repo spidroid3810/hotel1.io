@@ -8,7 +8,6 @@
 
 body{
 background: #eee;
-
 }
 
 nav{
@@ -21,6 +20,9 @@ nav{
   padding: 0 50px 0 100px;
   flex-wrap: wrap;
 }
+
+
+
 nav .logo{
   color: #ffea00;
   font-size: 35px;
@@ -30,6 +32,7 @@ nav ul{
   display: flex;
   flex-wrap: wrap;
   list-style: none;
+  
 }
 nav ul li{
   margin: 0 5px;
@@ -60,6 +63,7 @@ input[type="checkbox"]{
 @media (max-width: 1000px){
   nav{
     padding: 0 40px 0 50px;
+
   }
   
   } 
@@ -83,6 +87,7 @@ input[type="checkbox"]{
     text-align: center;
     display: block;
     transition: all 0.3s ease;
+    
   }
   #click:checked ~ ul{
     right: 0;
@@ -527,13 +532,23 @@ text-align: center;
  .alert {
  margin-bottom: 1em;
  padding: 10px;
- background: #ffea00;
+ background: #eee;
+ border-left: 5px solid #ffea00;
+  border-right: 5px solid #ffea00;
  font-family: 'Poppins', sans-serif;
  font-size: 14px;
  text-align: center;
  color: #111;
  border-radius: 2.5px;
  display: none;
+ }
+ 
+ .fa-check-circle{
+ color: limegreen;
+ }
+ 
+ .fa-heart{
+ color: red;
  }
  
  /* LARGE SCREENS */
@@ -648,4 +663,6 @@ text-align: center;
  background: #0f4061;
  
  }
+ 
+ 
  

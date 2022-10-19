@@ -34,7 +34,7 @@
      <div class="contact">
      <img class="team" src="images/book.png">
      <h4 class="contact-us">Hotel Booking Form</h4>
-     <div class="alert">Your Booking has been made</div>
+     <h2 class="alert">Your Booking has been made <i class="fas fa-check-circle"></i></h2>
      <form id="bookForm">
      <p class="name-field">
      <label>First Name<span>*</span></label>
@@ -92,8 +92,8 @@
   <li><a href="https:www.quora.com/What-is-trekking">Know about Moutaineering and trekking here</a></li>
   
   <h6 class="line" style="color:#fff;">Contact</h6>
-  <p style="color:#fff;">Contact: +91 XXXXXXXXXX</p>
-  <p style="color:#fff;">Email: XXXXXXX@gmail.com</p>
+  <p style="color:#fff;"><i class="fa fa-phone"></i> Contact: +91 XXXXXXXXXX</p>
+  <p style="color:#fff;"><i class="fas fa-envelope"></i> Email: XXXXXXX@gmail.com</p>
   <img src="images/map Manila Marriott Hotel.JPG" width="90%">
   </ul>
   <br>
@@ -159,7 +159,7 @@
   // Hide alert after 3 seconds
   setTimeout(function(){
   document.querySelector('.alert').style.display = 'none';
-  },3000);
+  },10000);
   
   // Clear form
   document.getElementById('bookForm').reset();
