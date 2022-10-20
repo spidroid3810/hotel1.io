@@ -386,6 +386,7 @@ text-align: center;
  'phone'
  'arrival'
  'departure'
+ 'room'
  'adults'
  'child'
  'message';
@@ -445,6 +446,11 @@ text-align: center;
  grid-area: departure;
  grid-column: 1 / 3;
  }
+
+ .room-field {
+ grid-area: room;
+ grid-column: 1 / 3;
+ }
  
  .adults-field {
  grid-area: adults;
@@ -488,6 +494,18 @@ text-align: center;
  }
  
  .contact form input, .contact form textarea {
+ font-family: 'Poppins', sans-serif;
+ font-weight: 200;
+ font-size: 14px;
+ width: 100%;
+ padding: .4em .8em;
+ background: rgba(249, 250, 250, .5);
+ border: 1px solid rgba(74, 86, 96, .1);
+ border-radius: 2.5px;
+ outline-color: #5dc3f2;
+ }
+ 
+ select{
  font-family: 'Poppins', sans-serif;
  font-weight: 200;
  font-size: 14px;
