@@ -584,6 +584,7 @@ text-align: center;
  'name last'
  'email phone'
  'arrival departure'
+ 'room  room'
  'adults child'
  'message message';
  }
@@ -616,6 +617,11 @@ text-align: center;
  .departure-field {
  grid-area: departure;
  grid-column: 2 / 3;
+ }
+ 
+ .room-field {
+ grid-area: room;
+ grid-column: 1 / 2;
  }
  
  .adults-field {
