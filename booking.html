@@ -37,12 +37,8 @@
      <h2 class="alert">Your Booking has been made <i class="fas fa-check-circle"></i></h2>
      <form id="bookForm">
      <p class="name-field">
-     <label>First Name<span>*</span></label>
+     <label>Name<span>*</span></label>
      <input type="text" name="name" id="name" required>
-     </p>
-     <p class="last-field">
-     <label>last Name<span>*</span></label>
-     <input type="text" name="last" id="last" required>
      </p>
      <p class="email-field">
      <label>Email <span>*</span></label>
@@ -152,18 +148,17 @@
  
  //Get value
  var name = getInputVal('name');
- var last = getInputVal('last');
  var email = getInputVal('email');
  var phone = getInputVal('phone');
+ var room = getInputVal('room');
  var arrival = getInputVal('arrival');
  var departure = getInputVal('departure');
- var room = getInputVal('room');
  var adults = getInputVal('adults');
  var child = getInputVal('child');
  var message = getInputVal('message');
  
  // Save message
- saveMessage(name, last, email, phone,arrival,departure,room,adults,child, message);
+ saveMessage(name, email, phone,room,arrival,departure,adults,child, message);
  
  // Show alert
  document.querySelector('.alert').style.display = 'block';
@@ -183,16 +178,15 @@
  }
  
  // Save message to firebase
- function saveMessage(name, last, email, phone, arrival, departure, room, adults, child, message){
+ function saveMessage(name, email, phone, room, arrival, departure, adults, child, message){
  var newMessageRef = messagesRef.push();
  newMessageRef.set({
  name: name,
- last: last,
  email: email,
  phone: phone,
+ room: room,
  arrival: arrival,
  departure: departure,
- room: room,
  adults: adults,
  child: child,
  message: message
