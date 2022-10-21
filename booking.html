@@ -116,7 +116,7 @@
   
   
   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-  <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"> </script>
+  <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
   <script src="script.js"></script>
   </body>
   </html>
@@ -154,12 +154,12 @@
  var room = getInputVal('room');
  var arrival = getInputVal('arrival');
  var departure = getInputVal('departure');
- var adults = getInputVal('adults');
+ var adults = getInputVal( 'adults');
  var child = getInputVal('child');
  var message = getInputVal('message');
  
  // Save message
- saveMessage(name, email, phone,room,arrival,departure,adults,child, message);
+ saveMessage(name, email, phone, room, arrival, departure, adults, child,message);
  
  // Show alert
  document.querySelector('.alert').style.display = 'block';
@@ -179,7 +179,7 @@
  }
  
  // Save message to firebase
- function saveMessage(name, email, phone, room, arrival, departure, adults, child, message){
+ function saveMessage(name, email, phone, room, arrival, departure, adults, child,message){
  var newMessageRef = messagesRef.push();
  newMessageRef.set({
  name: name,
@@ -194,26 +194,11 @@
  });
  }
  
+  
  
- // Get the button
- let mybutton = document.getElementById("myBtn");
  
- // When the user scrolls down 20px from the top of the document, show the button
- window.onscroll = function() {scrollFunction()};
  
- function scrollFunction() {
- if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
- mybutton.style.display = "block";
- } else {
- mybutton.style.display = "none";
- }
- }
  
- // When the user clicks on the button, scroll to the top of the document
- function topFunction() {
- document.body.scrollTop = 0;
- document.documentElement.scrollTop = 0;
- }
  
   
   </script>
