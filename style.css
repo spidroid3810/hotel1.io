@@ -564,10 +564,12 @@ text-align: center;
  
  .fa-check-circle{
  color: limegreen;
+ font-size:30px;
  }
  
  .fa-heart{
  color: red;
+ font-size:30px;
  }
  
  /* LARGE SCREENS */
@@ -702,3 +704,7 @@ text-align: center;
  width: 60px;
  }
  
+#btns{
+height:40px;
+width:40px;
+}

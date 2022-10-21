@@ -34,7 +34,7 @@
      <div class="contact">
      <img class="team" src="images/contactus.png">
      <h5 class="contact-us">Contact Us</h5>
-     <h2 class="alert"><i class="fas fa-heart"></i><br>Thank You! For your review</h2>
+     <h2 class="alert"><i class="fas fa-heart"></i><br>Thank You! For your review<br><button id="btns" class="close">OK</button></h2>
      <form id="contactForm">
      <p class="name-field">
      <label>Name <span>*</span></label>
@@ -131,7 +131,7 @@
   // Hide alert after 3 seconds
   setTimeout(function(){
   document.querySelector('.alert').style.display = 'none';
-  },5000);
+  },50000);
   
   // Clear form
   document.getElementById('contactForm').reset();
@@ -153,6 +153,7 @@
   }
   
  
+
   
   
   

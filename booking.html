@@ -34,7 +34,7 @@
      <div class="contact">
      <img class="team" src="images/book.png">
      <h4 class="contact-us">Hotel Booking Form</h4>
-     <h2 class="alert">Your Booking has been made <i class="fas fa-check-circle"></i></h2>
+     <h2 class="alert"><i class="fas fa-check-circle"></i><br>Your Booking has been made<br><button id="btns" class="close=">OK</button></h2>
      <form id="bookForm">
      <p class="name-field">
      <label>Name<span>*</span></label>
@@ -166,7 +166,7 @@
  // Hide alert after 3 seconds
  setTimeout(function(){
  document.querySelector('.alert').style.display = 'none';
- },10000);
+ },50000);
  
  // Clear form
  document.getElementById('bookForm').reset();
