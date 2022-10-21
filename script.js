@@ -32,7 +32,7 @@
  var myVar;
  
  function myFunction() {
- myVar = setTimeout(showPage, 3900);
+ myVar = setTimeout(showPage, 4000);
  }
  
  function showPage() {
