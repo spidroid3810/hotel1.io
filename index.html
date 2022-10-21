@@ -8,7 +8,15 @@
        <meta name="viewport" content="width=device-width, initial-scale=1">
    </head>
    
-<body>
+<body onload="myFunction()" style="margin:0;" >
+
+<div id="loader">   
+<svg class="a-loader" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg">
+	<circle cx="48" cy="48" r="42" />
+</svg>
+</div>
+<div style="display:none;" id="myDiv" class="animate-bottom">
+      
 <nav>
          <div class="logo">
           <b>HOTEL</b> <i class="fa-solid fa-hotel"></i> 
@@ -31,7 +39,7 @@
             <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
             <img src="images/slider1.jpg" width="100%">
             <div class="wave"><p class="quote">‘‘Live Life King Size’’</p></div>
-            <br>
+            <br> 
             <div class="container">
             <div class="icon">🍨</div>
             <h4>Best Food Ever</h4>  
@@ -44,7 +52,8 @@
           </div>
           <br>
           <br>
-      
+     
+         
           <div class="container">
           <div class="icon">☎️️</div>
           <h4>24x7 Phone Support</h4>
@@ -120,6 +129,7 @@
  
              </div>
 
+</div>
 
 <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 <script src="script.js"></script>

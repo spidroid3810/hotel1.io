@@ -708,3 +708,45 @@ text-align: center;
 height:40px;
 width:40px;
 }
+
+/* Center the loader */
+#loader {
+ text-align: center;
+ position:fixed;
+ margin-left:auto;
+ margin-right: auto;
+ width: 100%;
+ height: 100%;
+ display: flex;
+ background: #0f4061; 
+ justify-content: center;
+ align-items: center;
+ font-size:100px;
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+
+
+.a-loader {
+	animation: a-loader 4s linear ;
+	color: #ffea00;
+	fill: none;
+	height: 6rem;
+	stroke: currentColor;
+	stroke-dasharray: 263.467529296875;
+	stroke-dashoffset: 263.467529296875;
+	stroke-linecap: butt;
+	stroke-linejoin: miter;
+	stroke-width: 10;
+	vertical-align: top;
+	width: 6rem;
+}
+
+@keyframes a-loader {
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
